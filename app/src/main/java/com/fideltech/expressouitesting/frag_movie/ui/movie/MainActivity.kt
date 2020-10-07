@@ -1,13 +1,12 @@
-package com.fideltech.expressouitesting
+package com.fideltech.expressouitesting.ui.movie
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.fideltech.expressouitesting.R
 import com.fideltech.expressouitesting.factory.MovieFragmentFactory
-import com.fideltech.expressouitesting.ui.movie.MovieDetailFragment
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         supportFragmentManager.fragmentFactory = MovieFragmentFactory()
         super.onCreate(savedInstanceState)
@@ -28,3 +27,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+
+
+
+
+
+
+

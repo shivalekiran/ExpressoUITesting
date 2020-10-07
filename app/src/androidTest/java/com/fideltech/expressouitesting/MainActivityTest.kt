@@ -12,7 +12,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4ClassRunner::class)
-class MainActivityTest {
+public class MainActivityTest {
 
     //checking activity is visible or not
     @Test
@@ -22,6 +22,7 @@ class MainActivityTest {
 
         onView(withId(R.id.main)).check(matches(isDisplayed()))
     }
+/*
 
     //test visibility of view
     @Test
@@ -42,6 +43,7 @@ class MainActivityTest {
                 )
             )
     }
+*/
 
     //test textview text with set string
     @Test
@@ -56,10 +58,10 @@ class MainActivityTest {
     }
 
 
-    //checking navigation to secondary activity
+  /*  //checking navigation to secondary activity
     @Test
     fun test_navSecondaryActivity() {
-        val activityScenario = ActivityScenario.launch(MainActivity::class.java)
+         ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.button_next_activity))
             .perform(click())
 
@@ -77,13 +79,14 @@ class MainActivityTest {
         onView(withId(R.id.secondary))
             .check(matches(isDisplayed()))
 
+
         //for go back method 1
-        onView(withId(R.id.button_back_activity))
-            .perform(click())
+//        onView(withId(R.id.button_back_activity))
+//            .perform(click())
 
         //method 2
-//        pressBack()
+        pressBack()
         onView(withId(R.id.main)).check(matches(isDisplayed()))
 
-    }
+    }*/
 }
